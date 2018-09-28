@@ -296,3 +296,24 @@ nav h1 a {
   width: 100%;
 }
 } /* ----end styles: min-height 320px----  */
+
+
+/* large height devices height min 1000 */
+
+@media screen and (min-height:1000px) {
+
+.inside #map-container {
+  background: blue none repeat scroll 0 0;
+  /* use viewpoint height percetange - percetnage do not show up ref: https://snook.ca/archives/html_and_css/vm-vh-units */ 
+  height: 50vh;
+  width: 100%;
+}
+
+#restaurant-img {
+  height: 30vh;
+  width: 30vw
+}
+
+
+} /* ----end styles: min-height 320px----  */
+
