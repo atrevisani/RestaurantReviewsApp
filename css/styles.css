@@ -46,9 +46,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
+  width: 100vw; 
+ 
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -73,7 +75,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -200,11 +201,9 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  /* use viewpoint height percetange - percetnage do not show up ref: https://snook.ca/archives/html_and_css/vm-vh-units */ 
+  height: 50vh;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -214,7 +213,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -248,8 +247,8 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 15px 40px 30px;
+
 }
 #reviews-container {
   padding: 30px 40px 80px;
