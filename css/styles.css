@@ -30,6 +30,7 @@ a:hover, a:focus {
 a img{
 	border: none 0px #fff;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
@@ -43,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: white;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 10px;
@@ -91,7 +92,7 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: purple;
     text-decoration: none;
 }
 
@@ -166,7 +167,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: black;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -216,7 +217,7 @@ nav h1 a {
   width: 100%;
 }
 #restaurant-name {
-  color: #f18200;
+  color: black;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -253,7 +254,7 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: black;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -317,3 +318,14 @@ nav h1 a {
 
 } /* ----end styles: min-height 320px----  */
 
+
+
+a {
+  color: grey;
+}
+
+/* doesnt seem to allow syt
+
+leaflet-control-attribution leaflet-control {
+  background: black;
+}
