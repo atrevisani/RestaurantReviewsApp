@@ -6,15 +6,17 @@ var markers = []
 
 /* Service worker registration */
 
-
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/sw.js')
-    .then(function () {
-      console.log("Service Worker Registered");
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
     });
+  });
 }
-
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -177,7 +179,7 @@ createRestaurantHTML = (restaurant) => {
   image.setAttribute('alt', `Photo of ${restaurant.name}`);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
